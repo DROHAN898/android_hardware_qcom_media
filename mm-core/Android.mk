@@ -97,7 +97,7 @@ LOCAL_MODULE_TAGS       := optional
 LOCAL_VENDOR_MODULE     := true
 LOCAL_SHARED_LIBRARIES  := liblog libdl libcutils
 LOCAL_CFLAGS            := $(OMXCORE_CFLAGS)
-
+LOCAL_CFLAGS            := -Wno-error
 LOCAL_SRC_FILES         := src/common/omx_core_cmp.cpp
 LOCAL_SRC_FILES         += src/common/qc_omx_core.c
 ifneq (,$(filter msm8916 msm8994 msm8909 thulium msm8992 msm8952,$(TARGET_BOARD_PLATFORM)))
@@ -122,7 +122,7 @@ LOCAL_MODULE_TAGS       := optional
 LOCAL_VENDOR_MODULE     := true
 LOCAL_SHARED_LIBRARIES  := liblog libdl libcutils
 LOCAL_CFLAGS            := $(OMXCORE_CFLAGS)
-
+LOCAL_CFLAGS            := -Wno-error
 LOCAL_SRC_FILES         := src/common/omx_core_cmp.cpp
 LOCAL_SRC_FILES         += src/common/qc_omx_core.c
 ifneq (,$(filter msm8916 msm8994 msm8909 thulium msm8992 msm8952,$(TARGET_BOARD_PLATFORM)))

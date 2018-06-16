@@ -61,12 +61,12 @@ include $(CLEAR_VARS)
 # Common Includes
 libmm-vdec-inc          := $(LOCAL_PATH)/inc
 libmm-vdec-inc          += $(OMX_VIDEO_PATH)/vidc/common/inc
-libmm-vdec-inc          += $(TOP)/hardware/qcom/media/mm-core/inc
+libmm-vdec-inc          += $(TOP)/hardware/qcom/media/$(TARGET_BOARD_PLATFORM)/mm-core/inc
 libmm-vdec-inc          += $(TARGET_OUT_HEADERS)/qcom/display
 libmm-vdec-inc          += $(TARGET_OUT_HEADERS)/adreno
 libmm-vdec-inc          += $(TOP)/frameworks/native/include/media/openmax
 libmm-vdec-inc          += $(TOP)/frameworks/native/include/media/hardware
-libmm-vdec-inc      	+= $(TOP)/hardware/qcom/media/libc2dcolorconvert
+libmm-vdec-inc      	+= $(TOP)/hardware/qcom/media/$(TARGET_BOARD_PLATFORM)/libc2dcolorconvert
 libmm-vdec-inc      	+= $(TOP)/frameworks/av/include/media/stagefright
 ifeq ($(call is-platform-sdk-version-at-least,27),true) #O_MR1
 libmm-vdec-inc          += $(TOP)/frameworks/native/libs/nativewindow/include
